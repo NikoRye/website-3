@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="De">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asset&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Die Navigation</title>
+    <link rel="icon" type="image/x-icon" href="favicon_io-2">
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <a href="/">
+            <img src="img/webp/logo.new.webp" alt="Logo">
+        </a>
+    </div>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Front</a></li>
+            <li><a href="dienavigation.html">Die Navigation</a></li>
+            <li><a href="diesehnswurdigkeiten.html">Die Sehnswürdig<wbr>keiten</a></li>
+        </ul>
+    </nav>
+
+    <div class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+</header>
+    <main>
+        <div class="hero">
+            <h1>
+                Die Navigation
+            </h1>
+            <video src="movi/hovedebanegård.mov" autoplay muted loop></video>
+        </div>
+        <div>
+            <div class="grid_1-1hotel">
+                <img src="img/hotel.jpeg" alt="hotel">
+                <div>
+                    <h2>
+                        Unterkünften in Deutchland
+                    </h2>
+                    <p>
+                        Wenn man nach Unterkünften in Deutchland sucht, gibt es viele verschiedene Möglichkeiten. Viele
+                        Reisende buchen ihr Hotel
+                        online über Plattformen wie Booking.com oder Airbnb. Dort kann man Hotels, Apartments oder
+                        private
+                        Zimmer finden. Diese
+                        Seiten sind sehr praktisch, weil man Preise vergleichen und Bewertungen von anderen Gästen lesen
+                        kann.
+                    </p>
+                    <p>
+                        In großen Städten wie Berlin, Frankfurt am Main oder Munich gibt es auch viele bekannte
+                        Hotelketten.
+                        Beispiele sind
+                        Hilton Hotels & Resorts, Marriott International oder Ibis. Diese Hotels bieten oft einen guten
+                        Standard und befinden
+                        sich häufig in der Nähe von Bahnhöfen oder im Stadtzentrum.
+                    </p>
+                    <p>
+                        Für junge Reisende oder Menschen mit kleinerem Budget sind Hostels eine gute Alternative. Dort
+                        teilt
+                        man sich oft ein
+                        Zimmer mit anderen Reisenden, was günstiger ist und eine gute Möglichkeit bietet, neue Leute
+                        kennenzulernen. Besonders
+                        für Interrail-Reisende sind Hostels sehr beliebt.
+                    </p>
+                    <p>
+                        Insgesamt gibt es also viele verschiedene Optionen – von luxuriösen Hotels bis zu günstigen
+                        Hostels
+                        oder privaten
+                        Wohnungen. Deshalb kann jeder eine Unterkunft finden, die zu seinem Budget und zu seiner Reise
+                        passt.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="grid_1-1køre">
+                    <div>
+                        <h2>Der Zugverkehr</h2>
+                        <p>
+                            Der Zugverkehr in Deutchland ist sehr gut ausgebaut und eine der beliebtesten Arten zu
+                            reisen. Das größte Bahnunternehmen
+                            ist Deutsche Bahn, das viele Städte im ganzen Land miteinander verbindet.
+                        </p>
+                        <p>
+                            Für lange Strecken benutzen viele Menschen den Intercity-Express (ICE). Diese
+                            Hochgeschwindigkeitszüge fahren sehr
+                            schnell und verbinden große Städte wie Berlin, Frankfurt am Main, Hamburg und Munich. Die
+                            Züge sind komfortabel und
+                            haben oft WLAN, Steckdosen und ein Bordrestaurant.
+                        </p>
+                        <p>
+                            Neben den schnellen Fernzügen gibt es auch Regionalzüge, die kleinere Städte und Dörfer
+                            verbinden. Diese Züge sind
+                            besonders praktisch für kurze Strecken oder für Pendler.
+                        </p>
+                        <p>
+                            Viele Reisende kaufen ihre Tickets online oder über die App der Deutsche Bahn. Außerdem gibt
+                            es spezielle Angebote und
+                            Bahn-Pässe, zum Beispiel für junge Reisende oder für Menschen, die mehrere Länder in Europa
+                            besuchen möchten.
+                        </p>
+                        <p>
+                            Insgesamt ist das Reisen mit dem Zug in Deutschland einfach, schnell und eine
+                            umweltfreundliche Alternative zum Auto
+                            oder Flugzeug.
+                        </p>
+                    </div>
+                    <video src="movi/køre.mov" muted loop playsinline></video>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        // Play video on hover, pause on mouse out
+        const køreVideo = document.querySelector('.grid_1-1køre video');
+        if (køreVideo) {
+            køreVideo.parentElement.addEventListener('mouseover', () => {
+                køreVideo.play();
+            });
+            køreVideo.parentElement.addEventListener('mouseout', () => {
+                køreVideo.pause();
+                køreVideo.currentTime = 0;
+            });
+        }
+    </script>
+    <script src="menu.js"></script>
+</body>
+
+</html>

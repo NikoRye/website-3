@@ -1,0 +1,492 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/********** fonts ***********/
+.asset-regular {
+  font-family: "Asset", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/************* farver *************/
+.color1 {
+  color: #a3babf;
+}
+.color2 {
+  color: #bfb38f;
+}
+.color3 {
+  color: #eedca4;
+}
+.color4 {
+  color: rgb(0, 0, 0);
+}
+
+/******************* menu ********************/
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+}
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+header {
+  background-color: #a3babf;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+header nav a {
+  font-family: "Asset", serif;
+  font-size: 1rem;
+  padding: 0.3rem 0.8rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+}
+
+header nav a:hover {
+  background-color: #45505292;
+  border-radius: 1.5rem;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #a3babf;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+/*************** mobil *********************/
+ @media (max-width: 768px) {
+
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+video {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    font-size: 3rem;
+  }
+  /****************** links ***************************/
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.links figure {
+  position: relative;
+  margin: 0;
+}
+
+.links img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.links figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.links h2 {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+}
+}
+
+
+/*************** main *********************/
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: #bfb38f;
+  margin-block: 2rem 1rem;
+  padding-left: 1rem;
+  font-family: "Asset", serif;
+  font-size: 1.3rem;
+}
+
+h2 {
+  color: rgb(212, 244, 255);
+  padding-left: 2rem;
+  font-family: "Asset", serif;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+p {
+  margin-block: 2rem 1rem;
+  color: black;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.3;
+  text-wrap: pretty;
+  max-width: 65ch;
+}
+dl {
+  font-family: "Inter", sans-serif;
+}
+dt {
+  padding-left: 3rem;
+  font-family: "Inter", sans-serif;
+}
+ul {
+  padding-left: 3rem;
+  font-family: "Inter", sans-serif;
+}
+li {
+  margin-block: 0.5rem;
+  color: black;
+}
+a {
+  color: #bfb38f;
+  text-decoration: none;
+}
+
+/******************* body ********************/
+body {
+  background-color: #eedca4;
+}
+
+/****************** desktop ***************************/
+@media (min-width: 1000px) {
+  /****************** forside ***************************/
+  .hero {
+    position: relative;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    font-size: 3rem;
+  }
+
+  /****************** tekst ***************************/
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  /****************** videoer ***************************/
+  .places {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .places > div {
+    flex: 1;
+  }
+
+  /****************** links ***************************/
+  /* container for the three link cards; stretches full viewport width */
+  .links {
+    display: flex; /* arrange children horizontally */
+    gap: 20px; /* space between cards */
+    justify-content: space-between; /* push items to ends evenly */
+    width: 100vw; /* full screen width */
+    margin-left: calc(-50vw + 50%); /* center the full-width block */
+    padding: 0 2rem; /* horizontal padding inside */
+  }
+  /* each link wrapper becomes a flex item so all cards share equal width */
+  .links > a {
+    flex: 1;
+    display: flex; /* allow figure inside to stretch */
+  }
+  .links > a figure {
+    width: 100%; /* figure fills its parent link completely */
+  }
+  .links > div {
+    flex: 1;
+  }
+  .links img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .places video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  /****************** links effects ***************************/
+  figure.effect-bubba {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+  }
+
+  figure.effect-bubba figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(173, 173, 173, 0);
+    -webkit-transition: background 0.35s;
+    transition: background 0.35s;
+  }
+
+  figure.effect-bubba:hover figcaption {
+    background: rgba(0, 0, 0, 0.577);
+  }
+
+  figure.effect-bubba img {
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+  }
+
+  figure.effect-bubba:hover img {
+    opacity: 0.4;
+  }
+
+  figure.effect-bubba figcaption::before,
+  figure.effect-bubba figcaption::after {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: "";
+    opacity: 0;
+    -webkit-transition:
+      opacity 0.35s,
+      -webkit-transform 0.35s;
+    transition:
+      opacity 0.35s,
+      transform 0.35s;
+  }
+
+  figure.effect-bubba figcaption::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+  }
+
+  figure.effect-bubba figcaption::after {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+  }
+
+  figure.effect-bubba h2 {
+    padding-top: 30%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 0;
+    margin: 0;
+    opacity: 0;
+    -webkit-transition:
+      opacity 0.35s,
+      -webkit-transform 0.35s;
+    transition:
+      opacity 0.35s,
+      transform 0.35s;
+    position: relative;
+    z-index: 10;
+  }
+
+  figure.effect-bubba h2 a {
+    color: white;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+  figure.effect-bubba p {
+    padding: 20px 2.5em;
+    opacity: 0;
+    font-size: 0.9rem;
+    -webkit-transition:
+      opacity 0.35s,
+      -webkit-transform 0.35s;
+    transition:
+      opacity 0.35s,
+      transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+    color: white;
+  }
+
+  figure.effect-bubba:hover figcaption::before,
+  figure.effect-bubba:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  figure.effect-bubba:hover h2,
+  figure.effect-bubba:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  /****************** die navigation ***************************/
+  .grid_1-1hotel {
+    display: flex; /* use flexbox for easier ordering */
+    gap: 10px;
+    align-items: center;
+  }
+  .grid_1-1hotel img {
+    order: 2; /* put image on the right */
+    max-width: 30%;
+    height: auto;
+    object-fit: cover;
+  }
+  .grid_1-1hotel > div {
+    order: 1; /* text on left */
+    flex: 1;
+  }
+  .grid_1-1køre {
+    display: flex; /* use flexbox for layout */
+    gap: 10px;
+    align-items: center;
+  }
+  .grid_1-1køre video {
+    order: 1; /* put video on the right */
+    max-width: 30%;
+    height: auto;
+    object-fit: cover;
+  }
+  .grid_1-1køre > div {
+    order: 2; /* text on left */
+    flex: 1;
+  }
+
+  /****************** die sehnswurdigkeiten ***************************/
+  .grid_1-1-1-1 {
+     display: grid; 
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: align;
+  }
+}
+/****************** footer  *****************/
+footer {
+  background-color: #a3babf;
+  padding: 30px;
+}
